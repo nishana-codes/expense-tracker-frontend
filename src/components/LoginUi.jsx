@@ -21,8 +21,8 @@ export default function Login({ onLogin }) {
         return e;
     };
 
-    const login = (data) => axios.post("https://https://nishananazar.pythonanywhere.com/api/token/", data)
-    const signup = (data) => axios.post("https://https://nishananazar.pythonanywhere.com//api/signup/", data)
+    const login = (data) => axios.post("https://nishananazar.pythonanywhere.com/api/token/", data)
+    const signup = (data) => axios.post("https://nishananazar.pythonanywhere.com//api/signup/", data)
 
     const handleSubmit = async () => {
         const e = validate();

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "http://https://nishananazar.pythonanywhere.com/"
+    baseURL: "https://nishananazar.pythonanywhere.com"
 })
 
 // token attach
@@ -24,7 +24,7 @@ API.interceptors.response.use(
         if (error.response?.status == 401){
             const refresh = localStorage.getItem("refresh");
             const res = await axios.post(
-                "http://https://nishananazar.pythonanywhere.com/api/token/refresh/", {refresh:refresh}
+                "https://nishananazar.pythonanywhere.com/api/token/refresh/", {refresh:refresh}
             )
             const newToken = res.data.access;
             localStorage.setItem("access", newToken)
