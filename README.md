@@ -34,3 +34,16 @@ cd expense-tracker-frontend
 npm install
 
 npm run dev
+🌐 Environment Variables
+
+Create a .env file in the root directory:
+
+VITE_API_URL=http://localhost:8000
+📦 Build for Production
+npm run build
+👨‍💻 Author
+
+Developed by Nishana
+
+GitHub: https://github.com/nishana-codes
+
